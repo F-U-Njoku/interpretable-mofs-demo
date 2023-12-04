@@ -27,5 +27,5 @@ To execute the script, you can just use the command below with the arguments spe
 ```
 python six_objectives.py [file path] [target feature] ["dt"|"lr"] [sensitive feature]
 ```
-```
+
 ## Objective weights, ranking of solution with TOPSIS, feature frequency, and contribution
