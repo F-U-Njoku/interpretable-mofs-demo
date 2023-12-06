@@ -16,8 +16,9 @@ The python file **methodology.py**, takes in a preprocessed dataset, executes MO
 * The file with the set of solutions and their corresponding objective values.
 * An image with the individual feature contrition to the classification problem using the SHAP measure.
 * A spreadsheet with three sheets: one for the objective ranks, another for the rank of the solutions using TOPSIS, and the third with the frequency of the individual features.
-These are can then be used to create a dashboard like the one present in this demonstration to facilitate choosing a final solution from the set of solutions.
-## Four objectives
+These can then be used to create a dashboard like the one in this demonstration to facilitate choosing a final solution from the set of solutions.
+Below we present the commands for executing the **methodology.py** file for four and six objective problems.
+### Four objectives
 Three arguments are required to execute the ```four_objectives.py``` script:
 - file path: this is the path to the file for execution.
 - target feature: the name of the target feature.
@@ -26,7 +27,7 @@ To execute the script, you can just use the command below with the arguments spe
 ```
 python methodology.py [file path] [target feature] ["dt"|"lr"]
 ```
-## Six objectives
+### Six objectives
 In addition to the three arguments needed above, the ```six_objectives.py``` script requires a fourth one:
 - sensitive feature: this is the sensitive attribute on which fairness should be achieved.
 To execute the script, you can just use the command below with the arguments specified.
