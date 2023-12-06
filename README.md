@@ -15,9 +15,13 @@ pip install -r requirements.txt
 The python file ```methodology.py``` takes in a preprocessed dataset, executes MOFS, and then returns three files:
 1. The file with the set of solutions and their corresponding objective values.
 2. An image with the individual feature contrition to the classification problem using the SHAP measure.
-3. A spreadsheet with three sheets: one for the objective ranks, another for the rank of the solutions using TOPSIS, and the third with the frequency of the individual features.
+3. A spreadsheet with three sheets:
+    1. one for the objective ranks,
+    2. another for the rank of the solutions using TOPSIS,
+    3. and the third with the frequency of the individual features.
+  
 These can then be used to create a dashboard like the one in this demonstration to facilitate choosing a final solution from the set of solutions.
-Below, we present the commands for executing the **methodology.py** file for four and six objective problems.
+Below, we present the commands for executing the ```methodology.py``` file for four and six objective problems.
 * ### Four objectives
 The four objectives considered are _subset size, accuracy, F1 score, and Variance Inflation Factor (VIF)_. The required arguments to execute the ```methodology.py``` script for four objectives are:
 1. file path: this is the path to the file for execution.
