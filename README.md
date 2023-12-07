@@ -24,7 +24,7 @@ These can then be used to create a dashboard like the one in this demonstration 
 Below, we present the commands for executing the ```methodology.py``` file for four and six objective problems.
 * ### Four objectives
 The four objectives considered are _subset size, accuracy, F1 score, and Variance Inflation Factor (VIF)_. The required arguments to execute the ```methodology.py``` script for four objectives are:
-1. file path: this is the path to the file for execution.
+1. file path: this is the path to the file for execution (acceptable file format is CSV).
 2. target feature: the name of the target feature.
 3. classifier: classifier to use for the experiment. This could be a Decision tree (dt), Logistic regression (lr) or, if not specified, Naive Bayes (NB).
 4. weight method: there are three options for this argument: entropy, equal, or rs (which is the range/STD for each objective)
@@ -34,7 +34,7 @@ python methodology.py [file path] [target feature] ["dt"|"lr"] ["equal"|"entropy
 ```
 * ### Six objectives
 The six objectives considered are _subset size, accuracy, F1 score, VIF, statistical parity, and equalised odds_. The required arguments to execute the ```methodology.py``` script for six objectives are:
-1. file path: this is the path to the file for execution.
+1. file path: this is the path to the file for execution (acceptable file format is CSV).
 2. target feature: the name of the target feature.
 3. classifier: classifier to use for the experiment. This could be a Decision tree (dt), Logistic regression (lr) or, if not specified, Naive Bayes (NB).
 4.  sensitive feature: this is the sensitive attribute on which fairness should be achieved.
